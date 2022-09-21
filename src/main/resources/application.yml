@@ -1,0 +1,20 @@
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+#mysql://b730a651c531f4:7b55a499@us-cdbr-east-06.cleardb.net/heroku_b828eb11448c909?reconnect=true
+spring:
+  datasource:
+    password: "7b55a499"
+    url: "jdbc:mysql://us-cdbr-east-06.cleardb.net/heroku_b828eb11448c909?reconnect=true"
+    username: "b730a651c531f4"
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+        format_sql: true
+    show-sql: true
+
